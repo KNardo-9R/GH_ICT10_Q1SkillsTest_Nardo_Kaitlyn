@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Food Ordering System</title>
+</head>
+<body>
+
+    <h2>Food Ordering System</h2>
+
+    <div>
+        <h3>Menu<h3>
+            <input type="checkbox" id="food1" value="120">
+            <label for="food1">Adobong Mani</label><br>
+
+            <input type="checkbox" id="food2" value="20">
+            <label for="food2">Taho</label><br>
+
+            <input type="checkbox" id="food3" value="240">
+            <label for="food3">Omelet</label><br>
+
+            <input type="checkbox" id="food4" value="300">
+            <label for="food4">Sinigang</label><br>
+            
+            <input type="checkbox" id="food5" value="367">
+            <label for="food5">Sisig</label><br>
+    </div>
+
+    <h3>Customer Details</h3>
+
+    <div>
+        <form> 
+            <input id="custname" type="text" placeholder="Enter your name"><br>
+            <input id="custaddress" type="text" placeholder="Enter your address"><br>
+            <input id="custnumber" type="number" placeholder="Enter your number"><br>
+            <button type="button" py-click="details_pop">Order</button>
+        </form>
+    </div>
+
+    <div class="output" id="output"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
